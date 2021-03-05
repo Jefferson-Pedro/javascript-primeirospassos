@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Nacionalidade</title>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-color: #808080;
+      }
+        div{
+            font: normal 15pt arial;
+            margin-top: 50px;
+            color: black;
+      }
+    </style>
+ </head>
+  <body>
+       <h1>Estrangeiro ou não?</h1> 
+    País: <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="verificar()">
+      
+    <div id="res">Resultado:</div>
+      
+     <script>
+         
+         function verificar(){
+            var pais = window.document.getElementById('txt').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você mora no <strong>${pais}.</strong></p>`
+            if(pais.value != 'Brasil'){
+                res.innerHTML += `<p>Você é estrangeiro, pois não mora no Brasil!</p>`
+            }else{
+                res.innerHTML += `<p>Você não é estrangeiro, pois mora no Brasil.</p>`
+            }
+         }
+         
+    </script>
+
+  </body>
+</html>

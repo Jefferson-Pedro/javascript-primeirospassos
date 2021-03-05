@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Eventos DOM</title>
+    <meta charset="UTF-8">
+ 
+    </head>
+<body>
+    <input type="number" name="txt1" id="txt1">
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="somar()">
+    <p id="res">Resultado</p>
+     <script>
+        function somar(){
+            var a1 = document.getElementById('txt1')
+            var a2 = document.getElementById('txt2')
+            var a3 = document.getElementById('res')
+            var n1 = Number(a1.value)
+            var n2 = Number(a2.value)
+            var soma = n1 + n2
+            a3.innerHTML = `O valor da soma entre ${n1} e ${n2} é {soma}`
+                        
+        }
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Eventos DOM</title>
+    <meta charset="UTF-8">
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: rgb(42,139,42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }  
+    </style>
+    </head>
+<body>
+    <div id="area" onclick="clicar()">
+        Interaja...
+    </div>
+    <script>
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+        }
+    
+    </script>
+</body>
+</html>
+
+<!--    EVENTOS DOM
+
+mouseenter - Ponteiro do mouse entra no elemento (tag)
+mousemove - Enquanto mover o mouse dentro do elemento ele dispara esse evento;
+mousedown - Quando clica e segura o mouse;
+mouseup - Quando solta o clica do mouse;
+click - quando clica normalmente;
+mouseout - Ponteiro do mouse sai do elemento (tag);
+
+https://developer.mozilla.org/pt-BR/docs/Web/Events (todos os eventos possiveis)
+
+-->
