@@ -1,26 +1,10 @@
 function calc(){
-    for(var c = )
+    let numero = document.getElementsById('n1')
+    let select = document.getElementById('seltab')
+    let res = document.getElementById('op')
+
+    let num = Number(numero.value)
+    for(let c = 1; c <= 10; c++){
+        res.innerHTML = `${num} x ${c} = ${num*c}`
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-/*var dataAtual = new Date();
-var dia = dataAtual.getDate();
-var mes = (dataAtual.getMonth() + 1);
-var ano = dataAtual.getFullYear();
-var horas = dataAtual.getHours();
-var minutos = dataAtual.getMinutes();
-console.log("Hoje é dia " + dia + "/" + mes + " de " + ano + ". Agora são " + horas + ":" + minutos + "h.");
-// saída: Hoje é dia 15/7 de 2020. Agora são 14:59h.
-
-
-
-*/

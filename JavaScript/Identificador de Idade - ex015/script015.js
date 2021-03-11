@@ -4,7 +4,7 @@ function checar(){
     let data = new Date()
     let AnoAtual = data.getFullYear()
 
-   if(nasc.value.length == 0 || nasc.value < 1910 || nasc.value > AnoAtual){
+   if(nasc.value.length == 0 || nasc.value < 1910 || nasc.value > AnoAtual){ 
         window.alert('[ERRO] Verique os dados preenchidos e tente novamente!')
     }else{
         let sexo = window.document.getElementsByName('rsex') // Liga a variavel ao botão radio

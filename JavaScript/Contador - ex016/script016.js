@@ -31,3 +31,12 @@ function contar(){
         msg.innerHTML += `\u{1f3c1}`
     }
 }
+
+
+/*
+document.write(`Olá. <strong>${nome}</strong>, seu nome tem ${nome.length} letras<br/>`)
+
+ let = var. Para declarar variaveis pode-se usar um ou outro.
+ https://unicode.org/emoji/charts/full-emoji-list.html  - Para por emojis
+     
+*/
